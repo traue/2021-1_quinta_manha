@@ -14,3 +14,21 @@ Repositório da disciplina "Programação Web"
 ## Atividades
 
  - Atividade 1: Exercício de doação de sangue. [LINK](https://forms.gle/simHZ26XyVGzSukY9) - De 25.03 até 08.04
+
+
+---
+
+### Desafio do tio
+
+Para 15.04.2021:
+
+ - Implementar, usando a mesma lógica da calculadora IMC, uma pequena calculadora de Bhaskara!
+
+
+Lembrnado que Bhaskara é uma forma de extrair as raizes de uma equação do tipo ax2 + bx + c = 0
+
+Para isso, calcular:
+
+Delta = b2 - 4 * a * c
+Raiz+ = (-b + raiz(delta)) / 2 * a
+Raiz- = (-b - raiz(delta)) / 2 * a
