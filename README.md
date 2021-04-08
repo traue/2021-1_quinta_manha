@@ -13,4 +13,4 @@ Repositório da disciplina "Programação Web"
 
 ## Atividades
 
- - Primeira atrividade, exercício de doação de sangue. [LINK](https://forms.gle/simHZ26XyVGzSukY9) - De 25.03 até 08.04
+ - Atividade 1: Exercício de doação de sangue. [LINK](https://forms.gle/simHZ26XyVGzSukY9) - De 25.03 até 08.04
