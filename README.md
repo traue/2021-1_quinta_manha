@@ -18,7 +18,7 @@ Repositório da disciplina "Programação Web"
 
 ---
 
-### Desafio do tio
+### Desafio do tio (não vale nota, apenas para treinar, implementaremos no dia 15.04)
 
 Para 15.04.2021:
 
@@ -29,6 +29,9 @@ Lembrnado que Bhaskara é uma forma de extrair as raizes de uma equação do tip
 
 Para isso, calcular:
 
+
 Delta = b2 - 4 * a * c
+
 Raiz+ = (-b + raiz(delta)) / 2 * a
+
 Raiz- = (-b - raiz(delta)) / 2 * a
