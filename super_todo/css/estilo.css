@@ -15,6 +15,7 @@
     background-color: rgb(252, 86, 113) !important;
 }
 
+li.list-group-item.active {
     background-color: #fff;
     border-color: rgb(252, 86, 113);
     border-left: solid 6px  rgb(252, 86, 113); 
