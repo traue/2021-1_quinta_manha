@@ -1,0 +1,35 @@
+.menu {
+    margin-top: 25px;
+}
+
+.app {
+    margin-top: 25px;
+}
+
+.pagina {
+    border: solid 1px #DFDFDF;
+    padding: 25px !important;
+}
+
+.navback {
+    background-color: rgb(252, 86, 113) !important;
+}
+
+    background-color: #fff;
+    border-color: rgb(252, 86, 113);
+    border-left: solid 6px  rgb(252, 86, 113); 
+}
+
+li a {
+    color: #45b822;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: rgb(252, 86, 113);;
+}
+
+h4 {
+    color: rgb(248, 157, 172) !important;
+}
