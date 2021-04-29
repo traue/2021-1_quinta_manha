@@ -13,3 +13,13 @@ CREATE TABLE tb_tarefas(
     id_status INT NOT NULL DEFAULT 1,
     FOREIGN KEY(id_status) REFERENCES tb_status(id)
 );
+
+INSERT INTO tb_tarefas(tarefa) VALUES('Se formar');
+
+INSERT INTO tb_tarefas(tarefa) VALUES('Comprar ovos');
+
+INSERT INTO tb_tarefas(tarefa) VALUES('Ligar para o crush');
+
+INSERT INTO tb_tarefas(tarefa) VALUES('Lavar o carro');
+
+INSERT INTO tb_tarefas(tarefa) VALUES('Tomar vacina');
