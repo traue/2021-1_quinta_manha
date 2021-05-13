@@ -8,9 +8,11 @@ Repositório da disciplina "Programação Web"
 Lembre-se: É preciso estar logado com a conta de Uninove (@uni9.edu.br) para realização da(s) atividade(s)
 
 
-  - Atividade 1: Exercício de doação de sangue. [LINK](https://forms.gle/simHZ26XyVGzSukY9) - De 25.03 até 08.04
-  - Atividade 2: [LINK DA ATIVIDADE](https://forms.gle/WQdnoyBRirMfWSSp6) - De 06.05 até 20.05 9h
+  - [Atividade 1](https://forms.gle/simHZ26XyVGzSukY9) - De 25.03 até 08.04 (encerrada)
+  - [Atividade 2](https://forms.gle/WQdnoyBRirMfWSSp6) - De 06.05 até 20.05 9h  
+  - [Atividade 3](https://forms.gle/FSEgVLusdxRRNkBN7) - De 13.05 até 20.05 9h
 
+Novas atividades serão postadas aqui. Fique de olho ❤️.
 
 ***
 
