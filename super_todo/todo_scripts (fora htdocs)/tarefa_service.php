@@ -25,5 +25,19 @@
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }
+
+        public function inserir() {
+            $query = 'INSERT INTO tb_tarefas(tarefa) VALUES(:tarefa)';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(':tarefa', $this->tarefa->__get('tarefa'));
+            $stmt->execute();
+        }
+
+        public function remover() {
+            $query = 'DELETE FROM tb_tarefas WHERE id = :id';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(':id', $this->tarefa->__get('id'));
+            $stmt->execute();
+        }
     }
 ?>

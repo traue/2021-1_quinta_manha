@@ -15,4 +15,16 @@
         $tarefaService = new TarefaService($conn, $tarefa);
         $tarefas = $tarefaService->listarTarefasPendentes();
     }
+
+    if($acao == 'inserir') {
+        $tarefa = new Tarefa();
+        $tarefa->__set('tarefa', $_POST['tarefa']);
+
+        $conn = new Conexao();
+
+        $tarefaService = new TarefaService($conn, $tarefa);
+        $tarefaService->inserir();
+
+        header('Location: nova_tarefa.php?inclusao=1');
+    }
 ?>
