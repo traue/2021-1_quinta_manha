@@ -50,7 +50,7 @@
                             <h4>Tarefas pendentes</h4>
                             <hr>
 
-                            <? foreach($tarefas as $indice => $tarefa) { ?>
+                            <?php foreach($tarefas as $indice => $tarefa): ?>
                                 <div class="row mb-3 d-flex align-items-center">
                                     <div class="col-sm-9">
                                         <?= $tarefa->tarefa ?>
@@ -61,7 +61,7 @@
                                         <i class="fas fa-check-square fa-lg text-success"></i>
                                     </div>
                                 </div>
-                            <? } ?>
+                            <?php endforeach ?>
                         </div>
                     </div>
                 </div>
