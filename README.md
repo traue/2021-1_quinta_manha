@@ -9,8 +9,10 @@ Lembre-se: É preciso estar logado com a conta de Uninove (@uni9.edu.br) para re
 
 
   - [Atividade 1](https://forms.gle/simHZ26XyVGzSukY9) - De 25.03 até 08.04 (encerrada)
-  - [Atividade 2](https://forms.gle/WQdnoyBRirMfWSSp6) - De 06.05 até 20.05 9h  
-  - [Atividade 3](https://forms.gle/FSEgVLusdxRRNkBN7) - De 13.05 até 20.05 9h
+  - [Atividade 2](https://forms.gle/WQdnoyBRirMfWSSp6) - De 06.05 até 10.06 9h  
+  - [Atividade 3](https://forms.gle/FSEgVLusdxRRNkBN7) - De 13.05 até 10.06 9h
+  - [Atividade 4](https://forms.gle/maun2eyLaW14K5uB6) - De 20.05 até 10.06 9h
+
 
 Novas atividades serão postadas aqui. Fique de olho ❤️.
 
