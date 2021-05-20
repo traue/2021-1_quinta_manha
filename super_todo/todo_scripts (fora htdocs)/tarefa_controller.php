@@ -27,4 +27,50 @@
 
         header('Location: nova_tarefa.php?inclusao=1');
     }
+
+    if($acao == 'remover') {
+        $tarefa = new Tarefa();
+        $tarefa->__set('id', $_GET['id']);
+
+        $conn = new Conexao();
+        $tarefaService = new TarefaService($conn, $tarefa);
+        $tarefaService->remover();
+
+        if(isset($_GET['pg'])  && $_GET['pg'] == 'index') {
+            header('location: index.php');
+        } else {
+            header('location: todas_tarefas.php');
+        }
+        
+    }
+
+    if($acao == 'atualizar') {
+        $tarefa = new Tarefa();
+        $tarefa->__set('id', $_POST['id']);
+		$tarefa->__set('tarefa', $_POST['tarefa']);
+
+        $conn = new Conexao();
+        $tarefaService = new TarefaService($conn, $tarefa);
+        if($tarefaService->atualizar()) {
+            if(isset($_GET['pg'])  && $_GET['pg'] == 'index') {
+                header('location: index.php');
+            } else {
+                header('location: todas_tarefas.php');
+            }
+        }
+    }
+
+    if($acao == 'marcarRealizada') {
+        $tarefa = new Tarefa();
+        $tarefa->__set('id', $_GET['id']);
+        $tarefa->__set('id_status', 2);
+        $conn = new Conexao();
+        $tarefaService = new TarefaService($conn, $tarefa);
+        $tarefaService->marcarRealizada();
+        if(isset($_GET['pg'])  && $_GET['pg'] == 'index') {
+            header('location: index.php');
+        } else {
+            header('location: todas_tarefas.php');
+        }
+    }
 ?>
