@@ -18,10 +18,26 @@
             FROM
                 tb_tarefas AS t
                 LEFT JOIN tb_status AS s ON(t.id_status = s.id)
-            WHERE t.id_status = :id_status';
+            WHERE t.id_status = :id_status 
+            ORDER BY t.data_cadastro DESC';
 
             $stmt = $this->conexao->prepare($query);
             $stmt->bindValue(':id_status', $this->tarefa->__get('id_status'));
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
+        }
+
+        public function listarTodasTarefas() {
+            $query = 'SELECT
+                t.id,
+                t.tarefa,
+                s.status
+            FROM
+                tb_tarefas AS t
+                LEFT JOIN tb_status AS s ON(t.id_status = s.id)
+            ORDER BY t.data_cadastro DESC';
+
+            $stmt = $this->conexao->prepare($query);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }

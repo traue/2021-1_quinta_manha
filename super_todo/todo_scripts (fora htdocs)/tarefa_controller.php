@@ -16,6 +16,13 @@
         $tarefas = $tarefaService->listarTarefasPendentes();
     }
 
+    if($acao == 'listarTarefas') {
+        $tarefa = new Tarefa();
+        $conn = new Conexao();
+        $tarefaService = new TarefaService($conn, $tarefa);
+        $tarefas = $tarefaService->listarTodasTarefas();
+    }
+
     if($acao == 'inserir') {
         $tarefa = new Tarefa();
         $tarefa->__set('tarefa', $_POST['tarefa']);

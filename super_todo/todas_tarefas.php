@@ -1,5 +1,5 @@
 <?php
-    $acao = 'listarTarefasPendentes';
+    $acao = 'listarTarefas';
     require 'tarefa_controller.php';
 
     // echo '<pre>';
@@ -43,9 +43,9 @@
         <div class="row">
             <div class="col-md-3 menu">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item active"><a href="./">Tarefas pendentes</a></li>
+                    <li class="list-group-item"><a href="./">Tarefas pendentes</a></li>
                     <li class="list-group-item"><a href="nova_tarefa.php">Nova tarefa</a></li>
-                    <li class="list-group-item"><a href="todas_tarefas.php">Todas tarefas</a></li>
+                    <li class="list-group-item active"><a href="todas_tarefas.php">Todas tarefas</a></li>
                 </ul>
             </div>
 
@@ -63,9 +63,12 @@
                                         <?= $tarefa->tarefa ?>
                                     </div>
                                     <div class="col-sm-3 mt-2 d-flex justify-content-between">
-                                        <i class="fas fa-trash-alt fa-lg text-danger" onclick="removerTarefa(<?= $tarefa->id ?>, '<?= $tarefa->tarefa ?>', 'index')"></i>
-                                        <i class="fas fa-edit fa-lg text-infor" onclick="editarTarefa(<?= $tarefa->id ?>, '<?= $tarefa->tarefa ?>', 'index')"></i>
-                                        <i class="fas fa-check-square fa-lg text-success" onclick="realizarTarefa(<?= $tarefa->id ?>, 'index')"></i>
+                                        <i class="fas fa-trash-alt fa-lg text-danger" onclick="removerTarefa(<?= $tarefa->id ?>, '<?= $tarefa->tarefa ?>', 'todas_tarefas')"></i>
+                                        <?php if($tarefa->status == 'pendente') { ?>
+                                            <i class="fas fa-edit fa-lg text-infor" onclick="editarTarefa(<?= $tarefa->id ?>, '<?= $tarefa->tarefa ?>', 'todas_tarefas')"></i>
+                                            <i class="fas fa-check-square fa-lg text-success" onclick="realizarTarefa(<?= $tarefa->id ?>, 'intodas_tarefasdex')"></i>
+                                        <?php } ?>
+                                        
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -75,6 +78,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
